@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading Test</title>
+</head>
+<body>
+    <h1>
+        Hello World!
+    </h1>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/s.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+    <script>
+        System.import("../../dist/loading.js")
+        .then(function(Loading){
+            var close = Loading.create(document.body);
+            setTimeout(close,1000);
+        })
+    </script>
+</body>
+</html>
