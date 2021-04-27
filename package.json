@@ -1,0 +1,14 @@
+{
+  "name": "oftlib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oft/lib.git",
+  "author": "xczq <290353142@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  }
+}
