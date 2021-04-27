@@ -1,0 +1,11 @@
+{
+  "name": "zqlibruntime",
+  "displayName": "zqlibRuntime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/systemjs": "^6.1.0",
+    "systemjs": "^6.8.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "system",
+  "displayName": "System",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-typings": "tsc -d"
+  },
+  "dependencies": {
+    "@types/systemjs": "^6.1.0",
+    "systemjs": "^6.8.3"
+  }
+}

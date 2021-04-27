@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading Test</title>
+</head>
+<body>
+    <ul>
+        <li><a href="global.html">全局引入</a></li>
+        <li><a href="amd.html">AMD引入</a></li>
+    </ul>
+    <script src="../dist/system.js"></script>
+    <script>
+        System.import("../../loading/dist/loading.js")
+        .then(function(zqlib){
+            var close = zqlib.Loading.create(document.body);
+            setTimeout(close,1000);
+        })
+    </script>
+</body>
+</html>

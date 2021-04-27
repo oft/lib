@@ -1,5 +1,6 @@
 {
-  "name": "oftlib",
+  "name": "zqlib",
+  "displayName": "zqlib",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/oft/lib.git",

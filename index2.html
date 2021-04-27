@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading Test</title>
+</head>
+<body>
+    <ul>
+        <li><a href="global.html">全局引入</a></li>
+        <li><a href="amd.html">AMD引入</a></li>
+    </ul>
+    <script src="./loading/dist/loading.js"></script>
+    <script src="./eventemitter/dist/eventemitter.js"></script>
+    <script src="./dist/zqlib.js"></script>
+    <script>
+        var close = zqlib.Loading.create(document.body);
+        setTimeout(close,1000);
+        
+        var ee = new zqlib.EventEmitter();
+        ee.on("message",function(msg){
+            console.log("on message："+msg);
+        })
+        ee.once("message",function(msg){
+            console.log("once message："+msg);
+        })
+        ee.emit("message","hello1")
+        ee.emit("message","hello2")
+        ee.emit("message","hello3")
+        ee.emit("message","hello4")
+    </script>
+</body>
+</html>
